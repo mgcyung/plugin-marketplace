@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "plugin-marketplace",
+  "description": "mgcyung 的个人 Claude Code plugin marketplace——集中管理与分发自用的插件与 skills 集合，格式对齐 Anthropic 官方与社区 superpowers marketplace。",
+  "owner": {
+    "name": "mgcyung"
+  },
+  "plugins": [
+    {
+      "name": "mattpocock-skills",
+      "description": "Matt Pocock 的 Claude Code skills 集合，共 20 个 skill，分工程与生产力两类：工程含 TDD、诊断 bug、code review、领域建模、实现/原型/研究、triage、改进架构等；生产力含教学、交接（handoff）、写好 skill 等。",
+      "author": {
+        "name": "Matt Pocock"
+      },
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mattpocock/skills.git",
+        "ref": "main",
+        "sha": "1445797da5ee4e4054233878c0029e9276f9986a"
+      },
+      "homepage": "https://github.com/mattpocock/skills"
+    }
+  ]
+}

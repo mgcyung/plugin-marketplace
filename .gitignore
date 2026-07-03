@@ -1,0 +1,7 @@
+# Claude Code 本地/项目态配置（验证时可能生成，不入库）
+.claude/settings.local.json
+.claude/
+
+# OS / editor
+.DS_Store
+*.swp
