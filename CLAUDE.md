@@ -34,5 +34,5 @@ claude plugin install mattpocock-skills@plugin-marketplace --scope local
 
 ## 部署
 
-- remote 指向 `mgcyung/plugin-marketplace`（HTTPS），发布即 `git push -u origin main`。
-- **push / 公开发布是红线**，须 mgcyung 明确确认后再执行。
+- remote 指向 `mgcyung/plugin-marketplace`（HTTPS，私有仓库）。
+- **push 是红线**，须 mgcyung 明确确认后再执行。

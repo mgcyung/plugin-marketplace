@@ -2,7 +2,7 @@
 
 mgcyung 的个人 **Claude Code plugin marketplace**——集中管理和分发自用的插件与 skills 集合。
 
-一处登记，任何机器上一条命令即可加载全部自用插件；每个插件都 **pin 到具体 commit**，保证可复现、不受上游浮动影响。
+私有仓库，一处登记，任何已登录 GitHub 的机器上一条命令即可加载全部自用插件；每个插件都 **pin 到具体 commit**，保证可复现、不受上游浮动影响。
 
 格式不自己发明，直接对齐两个主流实现：
 
@@ -87,7 +87,7 @@ claude plugin validate <path>           # 校验 marketplace / plugin 清单
 
 ## 发布到 GitHub
 
-本仓库已配置 remote 指向 `mgcyung/plugin-marketplace`（HTTPS）。首次发布：
+本仓库已推送到 `mgcyung/plugin-marketplace`（**私有**，HTTPS）。首次发布：
 
 ```bash
 git push -u origin main
