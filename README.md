@@ -2,7 +2,7 @@
 
 mgcyung 的个人 **Claude Code plugin marketplace**——集中管理和分发自用的插件与 skills 集合。
 
-私有仓库，一处登记，任何已登录 GitHub 的机器上一条命令即可加载全部自用插件；每个插件都 **pin 到具体 commit**，保证可复现、不受上游浮动影响。
+私有仓库，一处登记，任何已登录 GitHub 的机器上一条命令即可加载全部自用插件。
 
 格式不自己发明，直接对齐两个主流实现：
 
@@ -25,7 +25,7 @@ plugin-marketplace/
 
 | 插件 | 来源 | pin 的 commit | 说明 |
 |---|---|---|---|
-| `mattpocock-skills` | [mattpocock/skills](https://github.com/mattpocock/skills) | `1445797` | Matt Pocock 的 20 个 skill，分工程（TDD、诊断 bug、code review、领域建模、实现/原型/研究、triage、改进架构等）与生产力（教学、交接、写好 skill 等）两类 |
+| `mattpocock-skills` | [mattpocock/skills](https://github.com/mattpocock/skills) | 跟随 main | Matt Pocock 的 20 个 skill，分工程（TDD、诊断 bug、code review、领域建模、实现/原型/研究、triage、改进架构等）与生产力（教学、交接、写好 skill 等）两类 |
 
 ## 使用
 
@@ -71,14 +71,13 @@ claude plugin validate <path>           # 校验 marketplace / plugin 清单
 ## 新增插件的约定
 
 1. 在 `plugins[]` 里加一条，字段对齐官方格式：`name` / `description` / `source` / 可选 `author` / `category` / `homepage`。
-2. `source` 用对象形式，**必须 pin `sha`** 到具体 commit（不用浮动的 `main`），保证可复现：
+2. `source` 用对象形式，指定 `source` + `url` + `ref`（分支名）：
 
    ```json
    {
      "source": "url",
      "url": "https://github.com/<owner>/<repo>.git",
-     "ref": "main",
-     "sha": "<40-hex-commit-sha>"
+     "ref": "main"
    }
    ```
 

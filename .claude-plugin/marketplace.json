@@ -16,8 +16,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mattpocock/skills.git",
-        "ref": "main",
-        "sha": "1445797da5ee4e4054233878c0029e9276f9986a"
+        "ref": "main"
       },
       "homepage": "https://github.com/mattpocock/skills"
     }
